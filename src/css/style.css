@@ -2,21 +2,18 @@ body{
     font-family: manuale;
 }
 .HeaderInicial{
-    background-image: url('../images/cosmos-1866820_1920.jpg');
-    background-size: cover;
+
     height: 100vh;
     width: 100%;
     padding:0;
     margin:0;
 }
-.tesfdcd{
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    padding:0;
-    margin:0;
-    background: rgba(255, 255, 255, 0.1);
+.textodf{
+    background-image: linear-gradient(90deg, #ebb2c2, #d95baa 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .tessdcsd{
     margin-top: 600px;
 }
@@ -34,13 +31,21 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.tesfdfd2{
-    background: rgba(255, 255, 255, 0.4);
-}
+
 .tesfdfd {
-    background: linear-gradient(-45deg, #829cb9, #355980);
+    background: linear-gradient(-45deg, #ebb2c2, #f9cee9);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
+}
+.divHoras{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tese{
+    width: 200px;
+    border-radius: 10px;
+
 }
 
 @keyframes gradient {
@@ -60,11 +65,22 @@ body{
     height: 100%;
     border-radius: 15px;
     background-size: cover;
-    background: -webkit-linear-gradient(left top, #355980, #1d425e);
-    background: -moz-linear-gradient(left top, #355980, #1d425e);
-    background: -o-linear-gradient(left top, #355980, #1d425e);
-    background: -ms-linear-gradient(left top, #355980, #1d425e);
-    background: linear-gradient(to right bottom, #355980, #1d425e);
+    background: -webkit-linear-gradient(left top, #b61d7d, #cb3c94);
+    background: -moz-linear-gradient(left top, #ebb2c2, #d95baa);
+    background: -o-linear-gradient(left top, #ebb2c2, #d95baa);
+    background: -ms-linear-gradient(left top, #ebb2c2, #d95baa);
+    background: linear-gradient(to right bottom, #ebb2c2, #d95baa);
+}
+
+.background-container2 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: -webkit-linear-gradient(left top, #000000,#410a2c,#000000);
+    background: -moz-linear-gradient(left top, #000000,#410a2c,#000000);
+    background: -o-linear-gradient(left top, #000000,#410a2c,#000000);
+    background: -ms-linear-gradient(left top, #000000,#410a2c,#000000);
+    background: linear-gradient(to right bottom,#000000,#410a2c,#000000);
 }
 
 .background-animation {
@@ -155,6 +171,9 @@ body{
     height: 400px;
     border-radius: 15px;
 }
+.dsddfv{
+    width: 600px;
+}
 
 .legenda{
     height: 25px;
@@ -164,7 +183,8 @@ body{
     text-align: center;
 }
 .horas{
-    width: 800px;
+    width: 90%;
+    margin: auto;
     color: white;
     border-radius: 15px;
 }
