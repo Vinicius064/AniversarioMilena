@@ -33,14 +33,48 @@ body{
 }
 
 .tesfdfd {
-    background: linear-gradient(-45deg, #ebb2c2, #f9cee9);
+    background: linear-gradient(-45deg, #d1888e,#e9b6be);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
 }
+.circol{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #6b0d47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(255, 255, 255,0.2);
+}
+.flexPresentes{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+}
+.flexPresentesPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.divTexto{
+    margin-left: 20px;
+    width: 250px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
 .divHoras{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.containerSite{
+    width: 90%;
+    margin: auto;
 }
 .tese{
     width: 200px;
@@ -65,11 +99,12 @@ body{
     height: 100%;
     border-radius: 15px;
     background-size: cover;
-    background: -webkit-linear-gradient(left top, #b61d7d, #cb3c94);
-    background: -moz-linear-gradient(left top, #ebb2c2, #d95baa);
-    background: -o-linear-gradient(left top, #ebb2c2, #d95baa);
-    background: -ms-linear-gradient(left top, #ebb2c2, #d95baa);
-    background: linear-gradient(to right bottom, #ebb2c2, #d95baa);
+    background: -webkit-linear-gradient(left top, #4f1b46,#6b0d47);
+    background: -moz-linear-gradient(left top, #4f1b46,#6b0d47);
+    background: -o-linear-gradient(left top, #4f1b46,#6b0d47);
+    background: -ms-linear-gradient(left top, #4f1b46,#6b0d47);
+    background: linear-gradient(to right bottom, #4f1b46,#6b0d47);
+    border: 3px solid rgba(255, 255, 255,0.2);
 }
 
 .background-container2 {
@@ -81,6 +116,13 @@ body{
     background: -o-linear-gradient(left top, #000000,#410a2c,#000000);
     background: -ms-linear-gradient(left top, #000000,#410a2c,#000000);
     background: linear-gradient(to right bottom,#000000,#410a2c,#000000);
+}
+
+.divConfirmePresenca{
+    width: 500px;
+    border-radius: 15px;
+    background: #6b0d47;
+    border: 3px solid rgba(255, 255, 255,0.2);
 }
 
 .background-animation {
