@@ -1,0 +1,35 @@
+body {
+  background-color: floralwhite;
+  color: tomato;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#timer {
+  font-weight: 400;
+  font-size: calc(100vh / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: .5em 1em;
+  background-color: white;
+  border: 1px solid tomato;
+  color: tomato;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: 'Source Code Pro', monospace;
+}

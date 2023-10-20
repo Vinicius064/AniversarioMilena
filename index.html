@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Milena</title>
-        <meta charset="utf-8">
+        <link href="src/css/sparkles.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link href="src/css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body class="">
-        <div class="HeaderInicial">
-            <div class="background-container2">
-                <div class="background-animation">
-                    <div class="DivInicio">
-                        <div>
-                            <h2 style="font-size: 45px;" class="mb-10 textodf">15 anos <br> Milena Beatriz</h2>
-                            <h2 style="font-size: 30px;" class="mt-10 textodf">08/12/2023</h2>
+        <section id="inicio">
+            <div class="glitter">
+                <div class="splash"></div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake" viewBox="0 0 16 16">
+                                <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802l-.598-.79ZM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.911.911 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.911.911 0 0 1 4 6.414V6Zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4V7.414ZM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793V11Zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
+                              </svg>
+                            <h1>Aniversário de 15 Anos da <em>Milena</em></h1>
+                            <p>Venha comemorar conosco esse grande dia.</p>
+                            <button id="button" class="btn-1">Confirmar Presença</button>
                         </div>
-                        <div>
-                            <img class="configImgMilena" src="src/images/WhatsApp Image 2023-10-14 at 14.51.12.jpeg">
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between">
+                                <img src="src/images/milena.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="background-container2">
-            <div class="pt-10 pb-10 containerSite">
-                <div class="horas">
-                    <div class="background-container">
-                        <div class="background-animation">
-                            <div class="divHoras p-3">
-                                <div class="dsddfv">
-                                    <h1 class="flex justify-center title">Faltam apenas</h1>
-                                    <div class="flex justify-between p-5">
+        </section>
+        <section id="dados">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="cronometro">
+                            <div class="d-flex justify-content-around align-items-center p-3">
+                                <div class="divHoras">
+                                    <h3 class="flex justify-center">Faltam apenas</h3>
+                                    <div class="flex justify-between p-3">
                                         <div class="text-center">
                                             <p id="meses"></p>
                                             <p>Meses</p>
@@ -42,130 +54,136 @@
                                         </div>
                                         <div class="text-center">
                                             <p id="horas"></p>
-                                            <p>horas</p>
+                                            <p>Horas</p>
                                         </div>
                                         <div class="text-center">
                                             <p id="minutos"></p>
-                                            <p>minutos</p>
+                                            <p>Min<span>utos</span></p>
                                         </div>
                                         <div class="text-center">
                                             <p id="segundos"></p>
-                                            <p>segundos</p>
+                                            <p>
+                                                Seg<span>undos</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <img class="tese" src="src/images/craiyon_132453_Birthday_Image_with_Pink_Pearls.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="py-4">
+                            <h2>Informações</h2>
+                            <p>Tudo que você precisa saber para aproveitar ao máximo esta comemoração.</p>
+                            <div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e080b4}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg>
+                                    <p class="m-0">Moratto Hall salão de festas - Qms 55 A, Sobradinho 2 Em frente ao cemitério - Sobradinho, Brasília - DF, 73080-100.</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e080b4}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path></svg>
+                                    <p class="m-0">Dia 8 de dezembro de 2023, a partir das 21h.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#e080b4}</style><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"></path></svg>
+                                    <p class="m-0">O evento já contará com jogos e atrativos, favor não trazer nenhum outro tipo de jogo.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="mt-10">
-                    <h2 style="font-size: 25px; color: white; text-align: center" class="mb-10">
+        <div class="background-container2">
+            <div class="pt-10 pb-10 containerSite">
+                
+
+                <div class="mt-10 mb-10 d-flex justify-content-center">
+                    <h4 class="text-center text-white tamanhoH5Celular">
                         A vida só ganha sentido quando a cada busca se faz um encontro, a cada sonho uma
-                        <br>realização e a cada ano, grandes amigos… Para viver as emoções deste dia tão
-                        <br>importante, quero estar ao lado de pessoas especiais como você…. conto com a
-                        <br>sua presença para a comemoração dos meus 15 anos.
-                    </h2>
+                        realização e a cada ano, grandes amigos… Para viver as emoções deste dia tão
+                        importante, quero estar ao lado de pessoas especiais como você…. conto com a
+                        sua presença para a comemoração dos meus 15 anos.
+                    </h4>
                 </div>
 
-                <div class="flex justify-center mt-5 mb-5">
+                <div id="anchor" class="flex justify-center">
                     <div class="divConfirmePresenca p-3">
-                        <h2 style="font-size: 25px; color: white; text-align: center" class=" mb-5"> Confirme sua presença</h2>
+                        <h3 class=" mb-4 text-white text-center"> Confirme sua presença</h3>
                         <div>
-                            <label for="Full_name" class="block mb-2 text-sm" style="color: white">Digite seu nome completo :</label>
-                            <input type="text" id="Full_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digite seu nome :" required>
+                            <input type="text" id="Full_name" placeholder="Digite seu nome" required>
+                        </div>
+                        <div id="DivConfirmacao" class="text-sm text-white mt-2 mb-2"></div>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <button onclick="ConfirmarPresenca()" class="btn-1">Confirmar Presença</button>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <h2 style="font-size: 25px; color: white; text-align: center" class=" mb-10 mt-10"> Sugestão de presente, mas lembrando que são só ideias e <br> o mais importante é sua presença:</h2>
+                <div class="mt-10 mb-10 d-flex justify-content-center">
+                    <h4 class="text-center text-white tamanhoH5Celular">
+                        Sugestão de presente, mas lembrando que são só ideias e o mais importante é sua presença
+                    </h4>
                 </div>
 
-                <div class="flexPresentesPrincipal" style=" border-radius: 20px">
+                <div class="flexPresentesPrincipal">
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-sapato-64.png"/>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-sapato-64.png"/>
                         </div>
                         <div class="divTexto">
-                            Sapatos, sandalias, tênis tamanho 37
+                            Sapatos, sandálias, tênis tamanho 37
                         </div>
                     </div>
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-cabide-64.png"/>                        </div>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-cabide-64.png"/>
+                        </div>
                         <div class="divTexto">
-                            Roupas tamanho 40, lembrando que não gosto muito de saias mas gosto de vestidos.
+                            Roupas tamanho 40. Não gosto muito de saias, mas gosto de vestidos.
                         </div>
                     </div>
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-maquiagem-64.png"/>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-maquiagem-64.png"/>
                         </div>
                         <div class="divTexto">
                             Itens de beleza, como maquiagem, perfumes, etc.
                         </div>
                     </div>
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-relógio-de-pulso-48.png"/>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-relógio-de-pulso-48.png"/>
                         </div>
                         <div class="divTexto">
-                            Relógios, pulseiras, colares, mas lembrando que sou alérgica a brincos.
+                            Relógios, pulseiras, colares, mas sou alérgica a brincos.
                         </div>
                     </div>
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-bolsa-64.png"/>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-bolsa-64.png"/>
                         </div>
                         <div class="divTexto">
-                            Bolsas, bochilas de passeio.
+                            Bolsas, mochilas de passeio.
                         </div>
                     </div>
                     <div class="flexPresentes p-10">
-                        <div class="circol">
-                            <img width="48" height="48" src="src/images/icons8-urso-60.png"/>
+                        <div class="circle">
+                            <img class="imgIcons" src="src/images/icons8-urso-60.png"/>
                         </div>
                         <div class="divTexto">
-                            Pelúcias para enveitar meu quarto.
+                            Pelúcias e itens para enfeitar meu quarto.
                         </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 style="font-size: 25px; color: white;" class=" mb-10 mt-10"> Informações sobre a festa :</h2>
-                </div>
-
-                <div class="flexPresentesPrincipal">
-                    <div class="flexPresentes">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ebbdc4}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        </div>
-                        <div class="divTexto">O evento será no Moratto Hall</div>
-                    </div>
-
-                    <div class="flexPresentes">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ebbdc4}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-                        </div>
-                        <div class="divTexto">Data: 08/12/2023 á partir das 21h</div>
-                    </div>
-
-                    <div class="flexPresentes">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ebbdc4}</style><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>
-                        </div>
-                        <div class="divTexto">O evento já contará com jogos e atrativos, favor não trazer nenhum outro tipo de jogo.</div>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="src/js/script.js"></script>
+        <script src="src/js/sparkles.js"></script>
     </body>
 </html>

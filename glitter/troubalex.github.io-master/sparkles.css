@@ -1,0 +1,85 @@
+body {
+  --bgColor: DarkSlateBlue;
+  background-color: var(--bgColor);
+
+  font-family: monospace;
+  font-size: 2em;
+  margin: 0;
+  transition: background-color 600ms ease-in-out;
+}
+
+main {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+}
+
+footer {
+  align-items: center;
+  bottom: 1em;
+  display: flex;
+  font-size: .5em;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+a {
+  color: GhostWhite;
+}
+
+.splash {
+  align-items: center;
+  color: GhostWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 1s ease-in-out;
+  opacity: var(--opacity);
+  padding: 0 2em;
+}
+
+.emoji {
+  margin: .5em 0;
+}
+
+.particle {
+  animation: var(--duration) linear var(--delay) var(--iteration) sparkle;
+  background-color: GhostWhite;
+  border-radius: 50%;
+  box-shadow: 0 0 var(--blur) var(--spread) rgba(255, 255, 224, 0.5);
+  height: var(--size);
+  left: var(--left);
+  opacity: 0;
+  position: absolute;
+  top: var(--top);
+  width: var(--size);
+  z-index: 99;
+}
+
+@keyframes sparkle {
+  0% { opacity: 0; }
+  25% { opacity: var (--opacity); }
+  75% { opacity: 0.9; }
+  100% { opacity: 0; }
+}
+
+@media (min-width: 330px) {
+  main {
+    flex-direction: row;
+  }
+  .splash {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .emoji {
+    font-size: 1.5em;
+    margin: 0 .5em;
+  }
+
+}
