@@ -28,24 +28,3 @@ $("#button").click(function() {
         scrollTop: $("#anchor").offset().top
     });
 });
-
-function ConfirmarPresenca(){
-    const Full_name = document.getElementById('Full_name').value;
-    if(Full_name){
-        const token = "6451367922:AAHkpC3tCzo1G1vwiQhmfMlTWh3ydoY0gWQ"
-
-        const chat_id = "6411144351"
-
-        var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${Full_name}`
-
-        let api = new XMLHttpRequest()
-        api.open("get", url, true)
-        api.send()
-        Full_name.value = 'teste'
-        document.getElementById('DivConfirmacao').classList.remove('enviado')
-        $('#DivConfirmacao').html('Presença confirmada com sucesso!!!');
-    }
-    else{
-        $('#DivConfirmacao').html('Por favor, preencha seu nome.');
-    }
-}
